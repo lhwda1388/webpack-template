@@ -66,7 +66,7 @@ const config = {
       filename: 'style.css',
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './index.html'), // 템플릿 경로
+      template: path.resolve(__dirname, './src/index.html'), // 템플릿 경로
       inject: true, // 번들링 파일 자동으로 붙일지 여부
       filename: path.resolve(__dirname, './dist/index.html'), // 빌드 이후 파일
     }),
