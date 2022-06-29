@@ -9,7 +9,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const config = {
   entry: {
-    main: path.join(__dirname, './src/index.ts'),
+    main: path.join(__dirname, './src/index.tsx'),
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
@@ -66,7 +66,7 @@ const config = {
       filename: 'style.css',
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/index.html'), // 템플릿 경로
+      template: path.resolve(__dirname, 'public/index.html'), // 템플릿 경로
       inject: true, // 번들링 파일 자동으로 붙일지 여부
       filename: path.resolve(__dirname, './dist/index.html'), // 빌드 이후 파일
     }),
